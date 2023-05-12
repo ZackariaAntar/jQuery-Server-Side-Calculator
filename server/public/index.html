@@ -12,17 +12,23 @@
     </header>
 
     <main>
-        <section id="calc-body">
-            <div id="text-display">
-
-            </div>
-            <div id="buttons">
-
-            </div>
+        <section id="calc-inputs">
+            <form action="">
+                <input type="number" id="first">
+                <button value="+" id="plus" >+</button>
+                <button value="-" id="minus" >-</button>
+                <button value="*" id="times" >*</button>
+                <button value="/" id="divide" >/</button>
+                <input type="number" id="second">
+                <button value="=" type="submit" id="equals">=</button>
+                <button value="c" type="reset" id="clear">C</button>
+            </form>
 
         </section>
 
-        <section id="history">
+        <section id="display-history">
+            <p id="recent-value"><span id="that-number"></span></p>
+            <ul id="history"></ul>
 
         </section>
     </main>

@@ -10,27 +10,34 @@ app.use(express.static("server/public")); // use the static files in the public 
 app.use(bodyParser.urlencoded({ extended: true })); // configuuring options for body-parser
 
 
-const calculation = []
 
-function crunchNumbers(){
-    let startNum = calculation[calculation.length -1].start;
-    let endNum = calculation[calculation.length - 1].end;
-    let op = calculation[calculation.length - 1].operator;
-
-
-}
+const answer = []
 
 
 app.get('/calc', function(req, res) {// establishing the server path for data to travel on. Where to get it from.
   console.log('Requesting Calculator logic');
 
-  res.send();
+  res.send(answer);
 });
 
 app.post("/calc", function (req, res) {
 	// // establishing the server path for response data to travel on. Where to take it to.
-console.log("Calculator data was sent");
-	calculation.push(req.body); // once at the specified location, store the data.
+	console.log("Calculator data was sent");
+
+	if (req.body.oper === "+") {
+		let eval = (req.body.first * 1) + (req.body.second * 1);
+		answer.push(eval);
+	} else if (req.body.oper === "-") {
+		let eval = req.body.first - req.body.second;
+		answer.push(eval);
+	} else if (req.body.oper === "*") {
+		let eval = req.body.first * req.body.second;
+		answer.push(eval);
+
+	} else if (req.body.oper === "/"){
+		let eval = req.body.first / req.body.second;
+		answer.push(eval);
+	}
 
 	res.sendStatus(201);
 });

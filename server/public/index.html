@@ -4,7 +4,10 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <link rel="stylesheet" href="styles/style.css">
+    <script src="vendors/jquery.js"></script>
+    <script src="scripts/client.js"></script>
+    <title>Server Calc</title>
 </head>
 <body>
     <header>
@@ -13,15 +16,15 @@
 
     <main>
         <section id="calc-inputs">
-            <form action="">
+            <form id="calc">
                 <input type="number" id="first">
-                <button value="+" id="plus" >+</button>
-                <button value="-" id="minus" >-</button>
-                <button value="*" id="times" >*</button>
-                <button value="/" id="divide" >/</button>
+                <button class="oper" value="+" id="plus" >+</button>
+                <button class="oper" value="-" id="minus" >-</button>
+                <button class="oper" value="*" id="times" >*</button>
+                <button class="oper" value="/" id="divide" >/</button>
                 <input type="number" id="second">
-                <button value="=" type="submit" id="equals">=</button>
-                <button value="c" type="reset" id="clear">C</button>
+                <button class="doer" value="=" type="submit" id="equals">=</button>
+                <button class="doer" value="c" type="reset" id="clear">C</button>
             </form>
 
         </section>

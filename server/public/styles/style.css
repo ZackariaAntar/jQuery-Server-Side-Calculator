@@ -18,31 +18,91 @@ header {
     text-align: center;
     margin: 0px;
     background-color: #775a8b;
-    height: 10vh;
+    height: 6em;
 
 }
 
 
-main {
+/* main {
     margin-top: 5vh;
     display: flex;
-    flex-direction: row;
+    flex-direction: column;
     justify-content: center;
+
+} */
+
+main {
+    flex: auto;
+    max-width: 80%;
+    margin: auto;
+}
+
+table{
+    display:  flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-content: center;
+    font-size: large;
+    margin-left: auto;
+    margin-right: auto;
+    width: 80%;
+}
+table, th, td {
+    border-collapse: collapse;
+    height: 2.15em;
+}
+th, td {
+    padding: .5em;
+    justify-items: center;
+    text-align: center
 
 }
 
-input {
+#dot {
+    padding-right: 10px;
+}
+
+#minus {
+    padding-right: 9px;
+
+}
+
+#divide {
+    padding-right: 10px;
+
+}
+td > button{
+    align-content: space-around;
+}
+
+/* input {
     padding: 1vh;
-    width: 20vw;
     background: #775a8b;
     border: 2px solid #4c315f;
 
 }
 
 button {
-    padding: .55vh;
+    font-family: ;
+    padding: 10px;
     background: #9684a3;
+    color: aliceblue;
+
 
 
 
 }
+
+.num {
+    font-size: large;
+    padding: 3vw;
+}
+.oper{
+    font-size: large;
+    padding: 3vw;
+}
+.doer {
+    font-size: large;
+    padding: 3vw;
+
+} */

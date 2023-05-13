@@ -15,56 +15,51 @@
     </header>
 
     <main>
-            <form id="calc">
-                <table id="calc-format">
-                    <thead>
-                        <tr>
-                            <th><input type="text" id="exp" disabled></th>
-                            <th><button class="doer" value="c" type="reset" id="clear">C</button></th>
-                        </tr>
+        <section id="form">
+                <form id="calc">
+                    <input type="text" id="exp"> <span><input type="reset" class="doer" value=C id="clear"></span>
+                    <table id="calc-format">
+
+                            <tbody>
+
+                                <tr>
+                                    <td class="smaller"><input type="button" class="input" value=1></td>
+                                    <td><input type="button" class="input" value=2></td>
+                                    <td><input type="button" class="input" value=3></td>
+                                    <td><input type="button" class="input" value=+ id="plus"></td>
+                                </tr>
+
+                                <tr>
+                                    <td class="smaller"><input type="button" class="input" value=4></td>
+                                    <td><input type="button" class="input" value=5></td>
+                                    <td><input type="button" class="input" value=6></td>
+                                    <td><input type="button" class="input" value= - id="minus"></td>
+                                </tr>
+
+                                <tr>
+                                    <td class="smaller"><input type="button" class="input" value=7></td>
+                                    <td><input type="button" class="input" value=8></td>
+                                    <td><input type="button" class="input" value=9></td>
+                                    <td><input type="button" class="input" value=* id="times"></td>
+                                </tr>
+
+                                <tr>
+                                    <td class="smaller"><input type="button" class="input" value=. id="dot"></td>
+                                    <td><input type="button" class="input" value=0></td>
+                                    <td><input type="submit" class="doer" value="=" id="equals"></td>
+                                    <td><input type="button" class="input" value= / id="divide"></td>
+                                </tr>
+
+                            </tbody>
+                    </table>
+                </form>
+                </section>
+                <section>
+                    <p id="recent-value"><span id="that-number"></span></p>
+                    <ul id="history"></ul>
+                </section>
 
 
-                    </thead>
-
-                    <tbody>
-
-                        <tr>
-                            <td><button class="input" value="1">1</button></td>
-                            <td><button class="input" value="2">2</button></td>
-                            <td><button class="input" value="3">3</button></td>
-                            <td><button class="input" value="+" id="plus">+</button></td>
-                        </tr>
-
-                        <tr>
-                            <td><button class="input" value="4">4</button></td>
-                            <td><button class="input" value="5">5</button></td>
-                            <td><button class="input" value="6">6</button></td>
-                            <td><button class="input" value="-" id="minus">-</button></td>
-                        </tr>
-
-                        <tr>
-                            <td><button class="input" value="7">7</button></td>
-                            <td><button class="input" value="8">8</button></td>
-                            <td><button class="input" value="9">9</button></td>
-                            <td><button class="input" value="*" id="times">x</button></td>
-                        </tr>
-
-                        <tr>
-                            <td><button class="input" value="." id="dot">.</button></td>
-                            <td><button class="input" value="0">0</button></td>
-                            <td><button class="doer" value="=" type="submit" id="equals">=</button></td>
-                            <td><button class="input" value="/" id="divide">/</button></td>
-                        </tr>
-
-                    </tbody>
-
-                </table>
-            </form>
-        <section id="display-history">
-            <p id="recent-value"><span id="that-number"></span></p>
-            <ul id="history"></ul>
-
-        </section>
     </main>
 
 

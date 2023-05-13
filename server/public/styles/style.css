@@ -5,6 +5,7 @@ body {
 }
 
 html, body {
+    min-height: 100vh;
     margin: 0px;
 }
 
@@ -19,6 +20,7 @@ header {
     margin: 0px;
     background-color: #775a8b;
     height: 6em;
+    margin-bottom: 3.5em;
 
 }
 
@@ -26,6 +28,10 @@ main {
     flex: auto;
     max-width: 80%;
     margin: auto;
+    align-content: space-around;
+}
+#form{
+    margin-bottom: 80%;
 }
 
 button {
@@ -36,21 +42,17 @@ button {
     border-color:#775a8b;
 }
 
-button:hover {
-    background-color: #775a8b;
-
-}
-
 table{
     display:  flex;
     flex-direction: column;
     justify-content: space-between;
-    align-content: center;
+    align-items: left;
     font-size: large;
     margin-left: auto;
     margin-right: auto;
-    width: 80%;
+    width: 100%;
 }
+
 
 table, th, td {
     border-collapse: collapse;
@@ -59,39 +61,40 @@ table, th, td {
 
 th, td {
     padding: .5em;
-    justify-items: center;
-    text-align: center
+    justify-items: flex-start;
 
 }
 
-#clear {
-    vertical-align: middle;
-    padding: .5em 1em;
-}
-
-#dot {
-    padding-right: 1.2em;
-}
-
-#minus {
-    padding-right: 1.2em;
-
-}
-
-#divide {
-    padding-right: 1.2em;
-
-}
-
-td > button{
-    align-content: space-around;
-}
-
-input {
+input[type=text] {
     min-height: 2em;
-    min-width: 20em;
+    min-width: 23.5em;
     background: #775a8b;
     border: 2px solid #4c315f;
     color: aliceblue;
+    margin-left: 9px;
 
+}
+
+input[type=button]{
+    min-height: 2em;
+    min-width: 5em;
+    background: #775a8b;
+    border: 2px solid #4c315f;
+    color: aliceblue;
+}
+
+input[type=submit]{
+    min-height: 2em;
+    min-width: 5em;
+    background: #775a8b;
+    border: 2px solid #4c315f;
+    color: aliceblue;
+}
+
+input[type=reset]{
+    min-height: 2.4em;
+    min-width: 5em;
+    background: #775a8b;
+    border: 2px solid #4c315f;
+    color: aliceblue;
 }

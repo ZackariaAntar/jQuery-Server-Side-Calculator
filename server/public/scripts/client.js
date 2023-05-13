@@ -3,28 +3,39 @@ $(document).ready(onReady);
 
 let expression;
 let operator;
+let tracker;
+
 
 function onReady(){
+    console.log('loaded');
     $('.input').on('click', displayInput)
     $('#clear').on('click', wipeTheInputs)
     $('#calc').on('submit', postToServer)
-
-    getFromServer()
+    // getFromServer()
 }
 
 function displayInput(event){
-    event.preventDefault()
-    $('#exp').append($(this).attr("value"))
-    if ($(this).attr("value") == '+'||'-'||'*'||'/'){
+    event.preventDefault();
+    let testParam = new RegExp(/^[a-z0-9.]+$/i);
+    let validate = testParam.test($(this).attr("value"));
+    let input = $(this).attr("value");
+    tracker+= input
+    console.log('clicked');
+    console.log(input);
+    console.log(tracker);
+    $("#exp").val(tracker.replace("undefined",''));
+    if (!validate){
         operator = $(this).attr("value");
+        console.log("this is an operator", operator);
     }
+
     // conditional to grab the operator which might be helpful to also send on server side for calc conditional.
 }
 
 
 function postToServer(event){
     event.preventDefault()
-     expression = $('#exp').val()
+    expression = $('#exp').val()
     $.ajax({
         method: 'POST',
         url: '/calc',
@@ -55,13 +66,12 @@ function getFromServer() {
 }
 
 function renderToDOM(evaluations){
-    let current = evaluations.length -1
+    let current = evaluations[evaluations.length -1]
 
     $('#that-number').empty()
-
-    $('#that-number').text(evaluations[current])
+    $('#that-number').text(current.eval)
     $("#history").append(
-		`<li class="history">${first} ${operator} ${second} = ${evaluations[current]}</li>`
+		`<li class="history">${current.history} = ${current.eval} </li>`
 	);
 }
 

@@ -20,7 +20,7 @@ app.get('/calc', function(req, res) {// establishing the server path for data to
 
 app.post("/calc", function (req, res) {
 	// // establishing the server path for response data to travel on. Where to take it to.
-	console.log("Calculator data was sent");
+	console.log("Calculator data was sent", req.body);
 	// string.substring(0, string.indexOf(character)); //// before the special character
 	// string.substring(string.indexOf(character) + 1) //// after special character.
 

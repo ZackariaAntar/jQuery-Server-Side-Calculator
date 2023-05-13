@@ -24,8 +24,12 @@ app.post("/calc", function (req, res) {
 	// // establishing the server path for response data to travel on. Where to take it to.
 	console.log("Calculator data was sent");
 
+	// string.substring(0, string.indexOf(character)); //// before the special character
+
+	// string.substring(string.indexOf(character) + 1) //// after special character.
+
 	if (req.body.oper === "+") {
-		let eval = (req.body.first * 1) + (req.body.second * 1);
+		let eval = req.body.first * 1 + req.body.second * 1;
 		answer.push(eval);
 	} else if (req.body.oper === "-") {
 		let eval = req.body.first - req.body.second;
@@ -33,8 +37,7 @@ app.post("/calc", function (req, res) {
 	} else if (req.body.oper === "*") {
 		let eval = req.body.first * req.body.second;
 		answer.push(eval);
-
-	} else if (req.body.oper === "/"){
+	} else if (req.body.oper === "/") {
 		let eval = req.body.first / req.body.second;
 		answer.push(eval);
 	}

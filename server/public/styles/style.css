@@ -22,19 +22,26 @@ header {
 
 }
 
-
-/* main {
-    margin-top: 5vh;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-
-} */
-
 main {
     flex: auto;
     max-width: 80%;
     margin: auto;
+}
+
+button {
+    font-family: Arial, Helvetica, sans-serif;
+    padding: 1em 1em;
+    background: #9684a3;
+    color: aliceblue;
+    border-color:#775a8b;
+
+
+
+
+}
+button:hover {
+    background-color: #775a8b;
+
 }
 
 table{
@@ -58,42 +65,41 @@ th, td {
 
 }
 
+#clear {
+    vertical-align: middle;
+    padding: .5em 1em;
+}
+
 #dot {
-    padding-right: 10px;
+    padding-right: 1.2em;
 }
 
 #minus {
-    padding-right: 9px;
+    padding-right: 1.2em;
 
 }
 
 #divide {
-    padding-right: 10px;
+    padding-right: 1.2em;
 
 }
 td > button{
     align-content: space-around;
+
 }
 
-/* input {
-    padding: 1vh;
+input {
+    min-height: 2em;
+    min-width: 20em;
     background: #775a8b;
     border: 2px solid #4c315f;
-
-}
-
-button {
-    font-family: ;
-    padding: 10px;
-    background: #9684a3;
     color: aliceblue;
 
-
-
-
 }
 
-.num {
+
+
+/* .num {
     font-size: large;
     padding: 3vw;
 }

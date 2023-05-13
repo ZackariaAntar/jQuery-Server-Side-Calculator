@@ -34,11 +34,8 @@ button {
     background: #9684a3;
     color: aliceblue;
     border-color:#775a8b;
-
-
-
-
 }
+
 button:hover {
     background-color: #775a8b;
 
@@ -54,10 +51,12 @@ table{
     margin-right: auto;
     width: 80%;
 }
+
 table, th, td {
     border-collapse: collapse;
     height: 2.15em;
 }
+
 th, td {
     padding: .5em;
     justify-items: center;
@@ -83,9 +82,9 @@ th, td {
     padding-right: 1.2em;
 
 }
+
 td > button{
     align-content: space-around;
-
 }
 
 input {
@@ -96,19 +95,3 @@ input {
     color: aliceblue;
 
 }
-
-
-
-/* .num {
-    font-size: large;
-    padding: 3vw;
-}
-.oper{
-    font-size: large;
-    padding: 3vw;
-}
-.doer {
-    font-size: large;
-    padding: 3vw;
-
-} */

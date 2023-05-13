@@ -1,34 +1,36 @@
 $(document).ready(onReady);
 
-let operator ='';
-let first ='';
-let second = '';
+
+let expression;
+let operator;
 
 function onReady(){
-    $('.oper').on('click', tempMem)
+    $('.input').on('click', displayInput)
     $('#clear').on('click', wipeTheInputs)
     $('#calc').on('submit', postToServer)
 
     getFromServer()
 }
 
-function tempMem(event){
+function displayInput(event){
     event.preventDefault()
-    operator = $(this).attr("value");
+    $('#exp').append($(this).attr("value"))
+    if ($(this).attr("value") == '+'||'-'||'*'||'/'){
+        operator = $(this).attr("value");
+    }
+    // conditional to grab the operator which might be helpful to also send on server side for calc conditional.
 }
 
 
 function postToServer(event){
     event.preventDefault()
-     first = $('#first').val()
-     second = $('#second').val()
+     expression = $('#exp').val()
     $.ajax({
         method: 'POST',
         url: '/calc',
         data:{
-            first: first,
+            exp: expression,
             oper: operator,
-            second: second,
         }
     }).then(function(response){
         getFromServer();
@@ -64,8 +66,7 @@ function renderToDOM(evaluations){
 }
 
 function wipeTheInputs(){
-    $("#first").val("");
-	$("#second").val("");
+    $("#exp").val("");
 }
 
 

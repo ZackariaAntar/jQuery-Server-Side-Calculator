@@ -9,14 +9,12 @@ function onReady(){
     $('#clear').on('click', wipeTheInputs)
     $('#calc').on('submit', postToServer)
 
-
+    getFromServer()
 }
 
 function tempMem(event){
     event.preventDefault()
     operator = $(this).attr("value");
-
-
 }
 
 

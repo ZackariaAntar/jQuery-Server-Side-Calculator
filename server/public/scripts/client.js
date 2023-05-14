@@ -70,17 +70,3 @@ function wipeTheInputs(){
 
 
 
-
-
-// keeping these here for easy reference.
-
-// <form id="calc">
-//      <input type="number" id="first">
-//             <button value="+" id="plus" >+</button>
-//             <button value="-" id="minus" >-</button>
-//             <button value="*" id="times" >*</button>
-//             <button value="/" id="divide" >/</button>
-//      <input type="number" id="second">
-//             <button value="=" type="submit" id="equals">=</button>
-//             <button value="c" type="reset" id="clear">C</button>
-// </form>

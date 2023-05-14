@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -9,6 +10,7 @@
     <script src="scripts/client.js"></script>
     <title>Server Calc</title>
 </head>
+
 <body>
     <header>
         <h1> jQuery Server Side Calculator</h1>
@@ -16,53 +18,53 @@
 
     <main>
         <section id="form">
-                <form id="calc">
-                    <input type="text" id="exp"> <span><input type="reset" class="doer" value=C id="clear"></span>
-                    <table id="calc-format">
+            <form id="calc">
+                <input type="text" id="exp"> <span><input type="reset" class="doer" value=C id="clear"></span>
+                <table id="calc-format">
 
-                            <tbody>
+                    <tbody>
 
-                                <tr>
-                                    <td class="smaller"><input type="button" class="input" value=1></td>
-                                    <td><input type="button" class="input" value=2></td>
-                                    <td><input type="button" class="input" value=3></td>
-                                    <td><input type="button" class="input" value=+ id="plus"></td>
-                                </tr>
+                        <tr>
+                            <td class="smaller"><input type="button" class="input" value=1></td>
+                            <td><input type="button" class="input" value=2></td>
+                            <td><input type="button" class="input" value=3></td>
+                            <td><input type="button" class="input" value=+ id="plus"></td>
+                        </tr>
 
-                                <tr>
-                                    <td class="smaller"><input type="button" class="input" value=4></td>
-                                    <td><input type="button" class="input" value=5></td>
-                                    <td><input type="button" class="input" value=6></td>
-                                    <td><input type="button" class="input" value= - id="minus"></td>
-                                </tr>
+                        <tr>
+                            <td class="smaller"><input type="button" class="input" value=4></td>
+                            <td><input type="button" class="input" value=5></td>
+                            <td><input type="button" class="input" value=6></td>
+                            <td><input type="button" class="input" value=- id="minus"></td>
+                        </tr>
 
-                                <tr>
-                                    <td class="smaller"><input type="button" class="input" value=7></td>
-                                    <td><input type="button" class="input" value=8></td>
-                                    <td><input type="button" class="input" value=9></td>
-                                    <td><input type="button" class="input" value=* id="times"></td>
-                                </tr>
+                        <tr>
+                            <td class="smaller"><input type="button" class="input" value=7></td>
+                            <td><input type="button" class="input" value=8></td>
+                            <td><input type="button" class="input" value=9></td>
+                            <td><input type="button" class="input" value=* id="times"></td>
+                        </tr>
 
-                                <tr>
-                                    <td class="smaller"><input type="button" class="input" value=. id="dot"></td>
-                                    <td><input type="button" class="input" value=0></td>
-                                    <td><input type="submit" class="doer" value="=" id="equals"></td>
-                                    <td><input type="button" class="input" value= / id="divide"></td>
-                                </tr>
+                        <tr>
+                            <td class="smaller"><input type="button" class="input" value=. id="dot"></td>
+                            <td><input type="button" class="input" value=0></td>
+                            <td><input type="submit" class="doer" value="=" id="equals"></td>
+                            <td><input type="button" class="input" value=/ id="divide"></td>
+                        </tr>
 
-                            </tbody>
-                    </table>
-                </form>
-                </section>
-                <section>
-                    <p id="recent-value"><span id="that-number"></span></p>
-                    <ul id="history"></ul>
-                </section>
+                    </tbody>
+                </table>
+            </form>
+        </section>
+        <section>
+            <p id="recent-value"><span id="that-number"></span></p>
+            <ul id="history"></ul>
+        </section>
 
 
     </main>
 
 
 </body>
+
 </html>
-<!--  #009da8 -->

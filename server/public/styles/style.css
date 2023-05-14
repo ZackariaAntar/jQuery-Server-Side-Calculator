@@ -4,7 +4,8 @@ body {
     color: aliceblue;
 }
 
-html, body {
+html,
+body {
     min-height: 100vh;
     margin: 0px;
 }
@@ -30,7 +31,8 @@ main {
     margin: auto;
     align-content: space-around;
 }
-#form{
+
+#form {
     margin-bottom: 80%;
 }
 
@@ -39,11 +41,11 @@ button {
     padding: 1em 1em;
     background: #9684a3;
     color: aliceblue;
-    border-color:#775a8b;
+    border-color: #775a8b;
 }
 
-table{
-    display:  flex;
+table {
+    display: flex;
     flex-direction: column;
     justify-content: space-between;
     align-items: left;
@@ -54,12 +56,15 @@ table{
 }
 
 
-table, th, td {
+table,
+th,
+td {
     border-collapse: collapse;
     height: 2.15em;
 }
 
-th, td {
+th,
+td {
     padding: .5em;
     justify-items: flex-start;
 
@@ -75,7 +80,7 @@ input[type=text] {
 
 }
 
-input[type=button]{
+input[type=button] {
     min-height: 2em;
     min-width: 5em;
     background: #775a8b;
@@ -83,7 +88,7 @@ input[type=button]{
     color: aliceblue;
 }
 
-input[type=submit]{
+input[type=submit] {
     min-height: 2em;
     min-width: 5em;
     background: #775a8b;
@@ -91,7 +96,7 @@ input[type=submit]{
     color: aliceblue;
 }
 
-input[type=reset]{
+input[type=reset] {
     min-height: 2.4em;
     min-width: 5em;
     background: #775a8b;

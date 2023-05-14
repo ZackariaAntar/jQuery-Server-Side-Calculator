@@ -4,7 +4,9 @@ body {
     color: aliceblue;
 }
 
-html, body {
+html,
+body {
+    min-height: 100vh;
     margin: 0px;
 }
 
@@ -18,31 +20,86 @@ header {
     text-align: center;
     margin: 0px;
     background-color: #775a8b;
-    height: 10vh;
+    height: 6em;
+    margin-bottom: 3.5em;
 
 }
-
 
 main {
-    margin-top: 5vh;
-    display: flex;
-    flex-direction: row;
-    justify-content: center;
-
+    flex: auto;
+    max-width: 80%;
+    margin: auto;
+    align-content: space-around;
 }
 
-input {
-    padding: 1vh;
-    width: 20vw;
-    background: #775a8b;
-    border: 2px solid #4c315f;
-
+#form {
+    margin-bottom: 80%;
 }
 
 button {
-    padding: .55vh;
+    font-family: Arial, Helvetica, sans-serif;
+    padding: 1em 1em;
     background: #9684a3;
+    color: aliceblue;
+    border-color: #775a8b;
+}
+
+table {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: left;
+    font-size: large;
+    margin-left: auto;
+    margin-right: auto;
+    width: 100%;
+}
 
 
+table,
+th,
+td {
+    border-collapse: collapse;
+    height: 2.15em;
+}
 
+th,
+td {
+    padding: .5em;
+    justify-items: flex-start;
+
+}
+
+input[type=text] {
+    min-height: 2em;
+    min-width: 23.5em;
+    background: #775a8b;
+    border: 2px solid #4c315f;
+    color: aliceblue;
+    margin-left: 9px;
+
+}
+
+input[type=button] {
+    min-height: 2em;
+    min-width: 5em;
+    background: #775a8b;
+    border: 2px solid #4c315f;
+    color: aliceblue;
+}
+
+input[type=submit] {
+    min-height: 2em;
+    min-width: 5em;
+    background: #775a8b;
+    border: 2px solid #4c315f;
+    color: aliceblue;
+}
+
+input[type=reset] {
+    min-height: 2.4em;
+    min-width: 5em;
+    background: #775a8b;
+    border: 2px solid #4c315f;
+    color: aliceblue;
 }

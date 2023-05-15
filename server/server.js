@@ -3,7 +3,7 @@ const bodyParser = require("body-parser"); // include body-parser
 
 const app = express(); // changing how we access express to use app for methods instead.
 
-const port = 5000; // registering port we want to listen on.
+const port = process.env.PORT || 5000; // registering port we want to listen on.
 
 app.use(express.static("server/public")); // use the static files in the public folder
 app.use(bodyParser.urlencoded({ extended: true })); // configuuring options for body-parser
